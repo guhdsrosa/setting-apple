@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg{
+    width: 100%;
+    height: 50%;
+}
+
+#gear2{
+    transform-origin: center center;
+
+    animation: fundo linear 15s infinite;
+}
+
+@keyframes fundo{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+#gear1{
+    transform-origin: center center;
+    transform-box: fill-box;
+    animation: fundo2 linear 15s infinite;
+}
+
+@keyframes fundo2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#app {
+    filter: drop-shadow(0px 0px 5px rgb(206, 210, 216));
+}
